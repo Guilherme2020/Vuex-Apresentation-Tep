@@ -141,20 +141,20 @@
       },
       mounted(){
 
-        const storage = localStorage.getItem("userName")
-        JSON.stringify(storage)
-        const payload ={
-          name: storage
-        }
-
-        this.changeUser(payload)
-
+        
 
 
 
       },
 
      created(){
+       const storage = localStorage.getItem("userName")
+        JSON.stringify(storage)
+        const payload ={
+          name: storage
+        }
+
+        this.changeUser(payload)
 
      }
 
